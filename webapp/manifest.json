@@ -125,7 +125,7 @@
           "options": {
             "settings": {
               "contextPath": "/Configurations",
-              "variantManagement": "Page",
+              "variantManagement": "Control",
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {

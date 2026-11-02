@@ -26,6 +26,9 @@ server:
       configuration:
         flp:
           theme: sap_horizon
+          apps:
+            - id: com.redbull.fi.arpayconfig
+              title: Manage AR Payment Configuration
     - name: fiori-tools-proxy
       afterMiddleware: compression
       configuration:
