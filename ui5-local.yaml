@@ -33,6 +33,7 @@ server:
         backend:
           - path: /sap
             url: http://redportderpd.sap.redbull.com:443
+            client: '010'
             destination: RBD
     - name: sap-fe-mockserver
       beforeMiddleware: csp

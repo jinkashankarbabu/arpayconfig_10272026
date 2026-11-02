@@ -95,7 +95,7 @@
     "routing": {
       "config": {
         "flexibleColumnLayout": {
-          "defaultTwoColumnLayoutType": "TwoColumnsBeginExpanded",
+          "defaultTwoColumnLayoutType": "TwoColumnsMidExpanded",
           "defaultThreeColumnLayoutType": "ThreeColumnsEndExpanded"
         },
         "routerClass": "sap.f.routing.Router"
@@ -129,7 +129,18 @@
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
-                    "type": "GridTable"
+                    "type": "GridTable",
+                    "condensedTableLayout": true,
+                    "enableExport": true,
+                    "personalization": {
+                      "column": true,
+                      "filter": true
+                    },
+                    "quickVariantSelection": {
+                      "showCounts": true
+                    },
+                    "selectAll": true,
+                    "selectionMode": "Auto"
                   }
                 }
               },
@@ -139,7 +150,9 @@
                     "route": "ConfigurationsObjectPage"
                   }
                 }
-              }
+              },
+              "defaultTemplateAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#table",
+              "initialLoad": "Enabled"
             }
           },
           "controlAggregation": "beginColumnPages",
@@ -153,7 +166,8 @@
             "settings": {
               "contextPath": "/Configurations",
               "navigation": {},
-              "editableHeaderContent": false
+              "editableHeaderContent": false,
+              "sectionLayout": "Tabs"
             }
           },
           "controlAggregation": "midColumnPages",

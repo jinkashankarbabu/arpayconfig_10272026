@@ -92,8 +92,8 @@
                                 <Record Type="SAP__common.ValueListParameterDisplayOnly">
                                     <PropertyValue Property="ValueListProperty" String="CustomerName"/>
                                 </Record>
-                                <Record Type="SAP__common.ValueListParameterInOut">
-                                    <PropertyValue Property="LocalDataProperty" PropertyPath="CompanyCode"/>
+                                <Record Type="SAP__common.ValueListParameterIn">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Companycode"/>
                                     <PropertyValue Property="ValueListProperty" String="CompanyCode"/>
                                 </Record>
                                 <Record Type="SAP__common.ValueListParameterDisplayOnly">
