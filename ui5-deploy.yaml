@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "4.0"
+metadata:
+  name: com.redbull.fi.arpayconfig
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: RBD
+          url: http://redportderpd.sap.redbull.com:443
+          client: '010'
+        app:
+          name: Y0_ARPAYCONFIG
+          description: AR Payment Configuration
+          package: Y0_FI_GENERAL_OBJECTS
+          transport: RBDK9A5TNG
+        exclude:
+          - /test/
+          - /localService/
