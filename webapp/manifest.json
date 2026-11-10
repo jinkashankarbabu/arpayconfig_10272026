@@ -141,7 +141,14 @@
                     },
                     "selectAll": true,
                     "selectionMode": "Auto"
+                  },
+                  "actions": {
+                  "CopyConfiguration": {
+                  "text": "Copy",
+                  "requiresSelection": true,
+                  "press": "com.redbull.fi.arpayconfig.ext.CopyActions.openCopyDialog"
                   }
+                }
                 }
               },
               "navigation": {
